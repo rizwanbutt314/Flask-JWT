@@ -1,0 +1,12 @@
+Flask
+Flask-RESTful
+Flask-Cors
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+psycopg2
+psycopg2-binary
+pytz
+six
+Werkzeug
