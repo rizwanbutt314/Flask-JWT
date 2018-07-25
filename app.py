@@ -20,6 +20,7 @@ jwt = JWTManager(app)
 
 CORS(app)
 api = Api(app)
+jwt._set_error_handler_callbacks(api)
 
 # Routes
 api.add_resource(GetAPIToken, '/get_token', endpoint="get-api-token")
