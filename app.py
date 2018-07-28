@@ -16,7 +16,9 @@ app.config['JWT_SECRET_KEY'] = SECRET_KEY
 # Token Expires after 1 hour
 _seconds = 1 * 3600
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(seconds=_seconds)
+app.config['PROPAGATE_EXCEPTIONS'] = True
 jwt = JWTManager(app)
+
 
 CORS(app)
 api = Api(app)
